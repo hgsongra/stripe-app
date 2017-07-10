@@ -1,0 +1,15 @@
+  <h1>Publications</h1>
+
+  <% @publications.each do |publication| %>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"><%= publication.title %></h2>
+        </div>
+        <div class="panel-body">
+          <p><%= publication.desc %></p>
+        </div>
+        <div class="panel-footer">
+          <%= link_to 'View More', publication, class: 'btn btn-primary' %>
+        </div>
+    </div>
+  <% end %>

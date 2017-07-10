@@ -1,0 +1,13 @@
+  <h1>Publication</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"><%= @publication.title %></h2>
+        </div>
+        <div class="panel-body">
+          <p><%= @publication.desc %></p>
+        </div>
+        <div class="panel-footer">
+          <%= link_to 'Back', publications_path, class: 'btn btn-primary' %>
+        </div>
+    </div>
